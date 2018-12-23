@@ -1,0 +1,26 @@
+
+.one {
+  text-align: left;
+  font-family: monospace ;
+  font-style: oblique;
+  margin-top: 100px;;
+}
+h2.two{
+  text-align: right;
+  font-family: monospace;
+  font-style: oblique;
+  margin-top: 10px;;
+}
+@media (max-width: 768px) {
+  .one {
+    text-align: left;
+    font-family: Century ;
+    font-style: oblique;
+    margin-top: 10px;;
+  }
+  h2.two {
+    font-family: Century ;
+    margin-left: 50px;
+    text-align: left;
+  }
+}
