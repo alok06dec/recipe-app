@@ -11,5 +11,9 @@ export class RecipeItemComponent implements OnInit {
   @Input() index: number;
   ngOnInit() {
   }
+  shortenDescription(str: string) {
+    const res = str.split('!!');
+    return res[0];
+  }
 
 }

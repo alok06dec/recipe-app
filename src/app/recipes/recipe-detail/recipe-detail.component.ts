@@ -33,4 +33,8 @@ export class RecipeDetailComponent implements OnInit {
     this.recipeService.deleteRecipe(+this.route.snapshot.params['id']);
     this.router.navigate(['../'], {relativeTo: this.route});
   }
+  shortenDescription(str: string) {
+    const res = str.split('!!');
+    return res[1];
+  }
 }
